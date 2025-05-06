@@ -28,6 +28,9 @@ public class TodoController {
         return todoService.getTodos(user.getUsername());
     }
 
+    @GetMapping("/go")
+    
+
     @PutMapping("/{id}")
     public  Todo updateTodo(@PathVariable Long id, @RequestBody Todo todo, @AuthenticationPrincipal User user){
 
